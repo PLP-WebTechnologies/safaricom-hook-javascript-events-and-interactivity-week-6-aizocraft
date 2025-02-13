@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Elements & Form Validation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <button id="toggleButton" class="btn">Toggle Background</button>
+
+    <div class="slider-container">
+        <label for="fontSlider">Adjust Text Size:</label>
+        <input type="range" id="fontSlider" min="10" max="50" value="20">
+        <p id="sliderText">Adjust my size!</p>
+    </div>
+
+    <button id="openModal" class="btn">Open Modal</button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>This is a modern modal!</p>
+            <button id="closeModal" class="btn close-btn">Close</button>
+        </div>
+    </div>
+
+    <form id="myForm" novalidate>
+        <h2>Register</h2>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <p id="nameError" class="error"></p>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <p id="emailError" class="error"></p>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <p id="passwordError" class="error"></p>
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <label for="dropdown">Choose an option:</label>
+    <select id="dropdown">
+        <option value="">Select an option</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+    </select>
+    <p id="dropdownMessage"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
